@@ -47,7 +47,8 @@ with open('multifamily.csv') as csvfile:
 
 		# Finally...let's get the geocode from mapbox api
 		url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + row['location'] +\
-			" Oklahoma City.json?access_token=" + os.environ['MAPBOXKEY']
+			" Oklahoma City OK.json?bbox=-97.587034,35.460296,-97.502931,35.524498&" \
+			"access_token=" + os.environ['MAPBOXKEY']
 		try:
 			r = requests.get(url).text
 			geocode_json = json.loads(r)
