@@ -1,3 +1,5 @@
+# NOTE: old, moved to Jupyter notebook
+#
 # Playing with cluster analysis of multifamily buildings in NW central OKC.
 #
 # See https://github.com/gboeing/urban-data-science/blob/master/15-Spatial-Cluster-Analysis/cluster-analysis.ipynb
